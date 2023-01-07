@@ -1,3 +1,3 @@
 # uhmi-vue-task
 
-## [VSCode](https://yegorkochetkov.github.io/uhmi-vue-task/)
+## [Demo](https://yegorkochetkov.github.io/uhmi-vue-task/)
