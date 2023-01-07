@@ -3,13 +3,13 @@ import { useRouter, useRoute } from "vue-router";
 import type { IPost } from "@/types/post.interface";
 import _ from "lodash";
 
-export function usePagination<Type>(items: Type[], searchQuery: Ref<string>) {
+export function usePagination(items: IPost[], searchQuery: Ref<string>) {
   const router = useRouter();
   const route = useRoute();
 
   const currPageNumber = ref(route.query.page ? Number(route.query.page) : 1);
   const pageCount = ref(0);
-  const allItems = items as IPost[];
+  const allItems = items;
   const itemsPerPage = 10;
 
   const filteredPosts = computed(() =>
