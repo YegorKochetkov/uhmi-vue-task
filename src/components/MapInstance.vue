@@ -3,11 +3,10 @@
 </template>
 
 <script setup lang="ts">
+import { useMarkersStore } from "@/stores/markers";
 import leaflet from "leaflet";
 import { storeToRefs } from "pinia";
 import { onMounted } from "vue";
-
-import { useMarkersStore } from "@/stores/markers";
 
 const store = useMarkersStore();
 const { markers } = storeToRefs(store);

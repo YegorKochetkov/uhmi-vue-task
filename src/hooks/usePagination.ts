@@ -1,7 +1,7 @@
-import { computed, ref, watch, type Ref } from "vue";
-import { useRouter, useRoute } from "vue-router";
 import type { IPost } from "@/types/post.interface";
 import _ from "lodash";
+import { computed, ref, watch, type Ref } from "vue";
+import { useRouter, useRoute } from "vue-router";
 
 export function usePagination(items: IPost[], searchQuery: Ref<string>) {
   const router = useRouter();

@@ -38,13 +38,12 @@
 </template>
 
 <script setup lang="ts">
+import { usePagination } from "../hooks/usePagination";
+import PostItemVue from "./PostItem.vue";
+import type { IPost } from "@/types/post.interface";
 import { ref } from "vue";
 import { useRoute } from "vue-router";
 import Paginate from "vuejs-paginate-next";
-
-import PostItemVue from "./PostItem.vue";
-import type { IPost } from "@/types/post.interface";
-import { usePagination } from "./hooks/usePagination";
 
 const route = useRoute();
 const searchQuery = ref(route.query.search ? String(route.query.search) : "");

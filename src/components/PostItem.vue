@@ -12,9 +12,9 @@
 </template>
 
 <script setup lang="ts">
+import BarChart from "./BarChart.vue";
 import type { IComment } from "@/types/comment.interface";
 import type { IPost } from "@/types/post.interface";
-import BarChart from "./BarChart.vue";
 
 const props = defineProps<{ post: IPost }>();
 const API_COMMENTS_URL = "https://jsonplaceholder.typicode.com/comments";
