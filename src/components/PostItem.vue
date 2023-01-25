@@ -40,6 +40,10 @@ const chartOptions = {
 </script>
 
 <style scoped>
+.card-body {
+  color: var(--color-text);
+  background: var(--color-background);
+}
 .comments {
   text-align: right;
 }
